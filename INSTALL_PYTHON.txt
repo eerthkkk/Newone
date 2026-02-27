@@ -1,0 +1,53 @@
+SETUP INSTRUCTIONS - PYTHON INSTALLATION
+==========================================
+
+Your system doesn't have Python installed yet. Follow these steps:
+
+OPTION 1: Install from Microsoft Store (Easiest)
+================================================
+1. Press Windows key + R
+2. Type: ms-settings:appsfeatures-app
+3. Search for "Python"
+4. Click "Get" or "Install" (latest version recommended)
+5. Wait for installation to complete
+6. Restart PowerShell/Command Prompt
+7. Run "run_app.bat" in your project folder
+
+OPTION 2: Download from Python.org (Recommended)
+====================================================
+1. Go to: https://www.python.org/downloads/
+2. Click "Download Python 3.12" (or latest version)
+3. Run the installer
+4. IMPORTANT: Check "✓ Add Python to PATH"
+5. Click "Install Now"
+6. Wait for installation to complete
+7. Restart PowerShell/Command Prompt
+8. Run "run_app.bat" in your project folder
+
+OPTION 3: Use Chocolatey (if installed)
+========================================
+1. Open PowerShell as Administrator
+2. Run: choco install python -y
+3. Wait for installation
+4. Restart PowerShell
+5. Run "run_app.bat" in your project folder
+
+AFTER PYTHON INSTALLATION
+==========================
+Verify it worked:
+1. Open PowerShell
+2. Type: python --version
+3. If you see a version number, Python is installed!
+4. Then run: pip install -r requirements.txt
+5. Finally run: streamlit run app.py
+
+NEED HELP?
+==========
+If you get "Python not found" error:
+- Make sure Python was added to PATH during installation
+- Restart your computer
+- Try uninstalling and reinstalling Python
+
+Once Python is installed:
+- Double-click run_app.bat OR
+- Open PowerShell and run: streamlit run app.py
